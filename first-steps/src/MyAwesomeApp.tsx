@@ -1,3 +1,4 @@
+import type { CSSProperties } from "react";
 
     const fistNme = 'Mario';
     const secondName ='Ricon';
@@ -9,6 +10,12 @@
         country: 'Jalisco',
     };
 
+    const myStyles: CSSProperties ={
+         backgroundColor: 'red',
+                borderRadius: isActive ? 10 : 20,
+                padding: 10,
+                marginTop: 19,
+    };
 
 export function Myname() {
     return(
@@ -19,7 +26,7 @@ export function Myname() {
                 <p>{favoritegames.join(', ')}</p>
                 <h1>{isActive ? 'Activo' : 'No activo'}</h1>
             </div>
-            <p>
+            <p style={myStyles}>
                 {JSON.stringify(address)}
             </p>
         </>
