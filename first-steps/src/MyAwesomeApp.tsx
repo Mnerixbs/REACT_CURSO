@@ -15,6 +15,7 @@ import type { CSSProperties } from "react";
                 borderRadius: isActive ? 10 : 20,
                 padding: 10,
                 marginTop: 19,
+                color: 'white',
     };
 
 export function Myname() {

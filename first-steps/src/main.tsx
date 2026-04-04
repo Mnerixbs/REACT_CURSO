@@ -3,9 +3,12 @@ import { createRoot } from 'react-dom/client'
 import { FirstSrepsApp } from './FirstSteps'
 import { Myname } from './MyAwesomeApp'
 
+
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-<FirstSrepsApp />
-<Myname></Myname>
+    <FirstSrepsApp />
+{/* 
+<Myname></Myname> */}
+
   </StrictMode>,
 )
